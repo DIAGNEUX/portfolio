@@ -3,11 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   color: white;
+  font-family: poppins;
 }
 
 body{
   background-color: black;
-  height: 100vh;
 }
 canvas{
   width: 400px;
@@ -17,7 +17,6 @@ canvas{
   animation: canvas;
   
 }
-
 
 
 .container{
@@ -99,6 +98,4 @@ canvas{
   cursor: pointer;
 
 }
-
-
 

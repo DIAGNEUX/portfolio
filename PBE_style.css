@@ -1,0 +1,393 @@
+:root {  
+    --first: rgb(56, 119, 115);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: poppins;  
+}
+  
+body{
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    
+  }
+  .navbar .link ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 15px;
+  
+  }
+  .navbar .link ul li:hover{
+    background-color: #387773;
+    
+  }
+  .navbar ul li a{
+    color: white;
+    text-decoration: none;
+  }
+.grid_me{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+  .navbar .name i{
+    font-size: 20px;
+    color:rgb(56, 119, 115) ;
+  
+  }
+.container_profil .photo{
+    width: 400px;
+    height: 500px;
+    position: relative;
+
+}
+.container_profil .photo .img{
+    width: 100%;
+    height: 100%;
+    background-color: var(--first);
+}
+.profil_nav{
+    width: 100%;
+    height: 60px;
+}
+.profil_nav h1{
+    text-align: center;
+}
+.desc_photo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.desc_photo .icon{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+.profil_desc{
+    width: 500px;
+}
+.profil_desc h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #387773;
+}
+.lottathing{
+  width: 100%;
+  margin-top: 30px;
+}
+.lottathing  .exper_prof h1 , .projet_prof h1 {
+  text-align: center;
+}
+.lottathing  .exper_prof ul{
+  margin: 15px 20px;
+}
+.lottathing  .exper_prof ul li{
+  margin-left: 35px;
+
+}
+.experience , .projet{
+  display: none;
+}
+
+.wrap_grid_them{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid_them{
+  width: 80%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2,50%);
+}
+.grid_them .chevron_bas ,.grid_them .chevron_bas1  {
+  cursor: pointer;
+}
+.exper_prof , .projet_prof{
+  padding: 15px;
+  margin: 15px 0;
+}
+.projet .in_projet{
+  padding: 15px;
+}
+
+/* les deux bouton */
+
+.btn_exper{
+  border: 1px solid #387773;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 1s;
+  transition-delay: 2s;
+
+}
+.btn_exper.ex_button{
+  opacity: 1;
+  transform: translateX(0px);
+
+
+}
+.btn_projet{
+  border: 1px solid #387773;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: 1s;
+  transition-delay: 2s;
+  
+}
+.btn_projet.pro_button{
+  opacity: 1;
+  transform: translateX(0px);
+  
+
+}
+
+/* les deux bouton */
+.wrap_competence{
+  margin: 30px 0;
+}
+.wrap_competence h1{
+  text-align: center;
+  
+}
+.title_comp{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 2s;
+
+}
+.wrap_competence .title_comp.h1_title{
+  opacity: 1;
+  transform: translateY(0px);
+
+
+}
+
+.lottathing .englobe_competence{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lottathing .competence{
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.competence .grid_competence{
+  display: grid;
+  grid-template-columns: repeat(3 , 300px);
+  gap: 20px;
+}
+/* les cards */
+.competence .grid_competence div{
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #387773;
+  background:linear-gradient(rgb(33, 10, 10),#387773, #4ca59f); 
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+  transition-delay: 0.5s;
+  
+}
+.competence .grid_competence div.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+.competence .grid_competence div:hover{
+  transform: translateY(-15px);
+  box-shadow:
+    0 0 3px #fff,
+    0 0 4px #fff,
+    0 0 5px #fff,
+    0 0 10px rgb(116, 233, 194),
+    0 0 15px #387773,
+    0 0 20px #387773,
+    0 0 25px #387773,
+    0 0 30px #387773;
+}
+
+.main_btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main_btn .englobe_bts{
+  width: 80%;
+  position: relative;
+
+}
+.main_btn .englobe_bts h1 ,
+.main_btn .englobe_bts  h3 {
+  text-align: center;
+  margin: 3px 0;
+}
+.SISR , .SLAM{
+  margin: 3px 0;
+
+}
+.main_btn .englobe_bts h1 {
+  color: #387773;
+}
+.main_btn .englobe_bts .bts_grid{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2,50%);
+  
+}
+
+
+/* ecole  */
+.main_ecole h1{
+  text-align: center;
+  color: #387773;
+}
+.main_ecole h3{
+  text-align: center;
+}
+.main_ecole .ps .englobe_ps{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_ecole .ps .grid_ps{
+  width: 80%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: 350px;
+  position: relative;
+
+}
+.main_ecole .ps .grid_ps div{
+  position: relative;
+
+}
+.main_ecole .ps .grid_ps div img{
+  width: 100%;
+  height: 100%;
+}
+.main_ecole .ps .grid_ps .englobe_ecole_par{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0 ,0.8);
+  top: 30px;
+  left: 0;
+  transition: 0.5s;
+  opacity: 0;
+  padding: 0 20px;
+  box-shadow:
+    0 0 3px #fff,
+    0 0 4px #fff,
+    0 0 5px #fff,
+    0 0 10px rgb(116, 233, 194),
+    0 0 15px #387773,
+    0 0 20px #387773,
+    0 0 25px #387773,
+    0 0 30px #387773;
+}
+.main_ecole .ps .grid_ps .englobe_ecole_par:hover{
+  opacity: 1;
+}
+.englobe_ecole_btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.englobe_ecole_btn button{
+  padding: 10px;
+  background-color: #387773;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  
+}
+.wrap_Ap1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap_Ap1 .Ap1 {
+  width: 80%;
+  
+
+}
+.englobe_ap_img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap_Ap1 .Ap1 img{
+  height: 150px;
+}
+.wrap_Ap1 .Ap1 h1 , .wrap_Api .Ap1 h3{
+  text-align: center;
+}
+.englobe_grid_ap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.englobe_grid_ap .grid_ap1{
+  display: grid;
+  grid-template-columns: repeat(3 , 300px);
+  gap: 20px;
+}
+.englobe_grid_ap .grid_ap1 div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #387773;
+  background:linear-gradient(#387773, #4ca59f , rgb(33, 10, 10)) ;
+}
+
+.englobe_grid_ap .grid_ap1 div:hover{
+  box-shadow:
+    0 0 3px #fff,
+    0 0 4px #fff,
+    0 0 5px #fff,
+    0 0 10px rgb(116, 233, 194),
+    0 0 15px #387773,
+    0 0 20px #387773,
+    0 0 25px #387773,
+    0 0 30px #387773
+  
+}

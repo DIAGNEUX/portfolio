@@ -72,13 +72,12 @@ gsap.to(animProps, {duration: 120, xRot: Math.PI * 2, yRot: Math.PI * 4, repeat:
 }});
 
 
-
-var timeline = new TimelineMax();
-
-timeline.fromTo("canvas",1,{y:0,x:0, scale:0.4},
-{y:0,x:300, scale:1},"+=1")
-timeline.fromTo(".left h2",1.2,{opacity:0,y:-200, x:200}, {scale:1,opacity:1,y:0,x:0} ,">")
-timeline.fromTo(".left .both",0.7,{opacity:0,y:-200}, {opacity:1,y:0}, ">");
-timeline.fromTo(".left .desc",0.7,{opacity:0,x:-100}, {scale:1,opacity:1,x:0}, ">");
-timeline.fromTo(".left .bottom_me",1,{opacity:0,x:-100}, {scale:1,opacity:1,x:0}, ">");
-timeline.fromTo(".navbar",1.6,{opacity:0,y:-200}, {scale:1,opacity:1,y:0,ease: "bounce"}, ">");    
+window.onload = function() {
+  var timeline = new TimelineMax();
+  timeline.fromTo("canvas", 1, {y:0, x:0, scale:0.4}, {y:0, x:300, scale:1}).delay(1);
+  timeline.fromTo(".left h2",1.2,{opacity:0,y:-200, x:200}, {scale:1,opacity:1,y:0,x:0} ,">")
+  timeline.fromTo(".left .both",0.7,{opacity:0,y:-200}, {opacity:1,y:0}, ">")
+  timeline.fromTo(".left .desc",0.7,{opacity:0,x:-100}, {scale:1,opacity:1,x:0}, ">")
+  timeline.fromTo(".left .bottom_me",1,{opacity:0,x:-100}, {scale:1,opacity:1,x:0}, ">")
+  timeline.fromTo(".navbar",1.6,{opacity:0,y:-200}, {scale:1,opacity:1,y:0,ease: "bounce"}, ">"); 
+}
