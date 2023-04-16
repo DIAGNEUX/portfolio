@@ -98,4 +98,7 @@ canvas{
   cursor: pointer;
 
 }
-
+.desc{
+  font-size: 17px;
+  margin-top: 20px;
+}
