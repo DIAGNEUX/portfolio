@@ -50,14 +50,22 @@ body{
   }
 .container_profil .photo{
     width: 400px;
-    height: 500px;
+    height: 450px;
     position: relative;
 
 }
 .container_profil .photo .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: var(--first);
+}
+.container_profil .photo .img img{
+  filter: grayscale(60%);
+  background-color: black;
+  border-radius: 40%;
 }
 .profil_nav{
     width: 100%;
