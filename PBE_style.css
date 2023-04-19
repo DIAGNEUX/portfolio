@@ -285,7 +285,6 @@ body{
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2,50%);
-  grid-template-rows: 350px;
   position: relative;
 
 }
@@ -295,11 +294,11 @@ body{
 }
 .main_ecole .ps .grid_ps div img{
   width: 100%;
-  height: 100%;
+  height: 350px;
 }
-.main_ecole .ps .grid_ps .englobe_ecole_par{
+.main_ecole .ps .grid_ps .englobe_ecole_par {
   width: 100%;
-  height: 100%;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,6 +319,7 @@ body{
     0 0 25px #387773,
     0 0 30px #387773;
 }
+
 .main_ecole .ps .grid_ps .englobe_ecole_par:hover{
   opacity: 1;
 }
