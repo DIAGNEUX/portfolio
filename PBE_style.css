@@ -213,8 +213,7 @@ body{
   border-radius: 20px;
   opacity: 0;
   transform: translateY(100px);
-  transition: 1s;
-  transition-delay: 0.5s;
+ 
   
 }
 .competence .grid_competence div.show{
@@ -254,6 +253,12 @@ body{
 .SISR , .SLAM{
   margin: 3px 0;
 
+}
+.secu{
+  margin-top: 10px;
+}
+.secu h2{
+  text-align: center;
 }
 .main_btn .englobe_bts h1 {
   color: #387773;
@@ -398,4 +403,48 @@ body{
     0 0 25px #387773,
     0 0 30px #387773
   
+}
+.Ent_contain{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  
+
+}
+.Ent_contain .Ent_par ,
+.Ent_contain .Ent_img {
+  width:  500px;
+  height: 500px;
+  
+  
+}
+.Entreprise .Ent_contain .Ent_img{
+  background-color: white;
+}
+.Entreprise .Ent_contain .Ent_img{
+
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Entreprise  h1{
+  text-align: center;
+}
+.tableau .syn button{
+  padding: 20px;
+  font-size: 8px 14px;
+  background-color: var(--first);
+}
+.tableau .syn button a{
+  text-decoration: none;
+  color: white;
+}
+.center_ko{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

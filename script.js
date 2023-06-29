@@ -1,3 +1,4 @@
+
 var scene = new THREE.Scene();
 document.addEventListener( 'mousemove', onMouseMove, false );
 var camera = new THREE.PerspectiveCamera( 70, window.innerWidth/window.innerHeight, 0.5, 900 );
