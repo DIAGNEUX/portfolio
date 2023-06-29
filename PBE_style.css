@@ -415,9 +415,13 @@ body{
 .Ent_contain .Ent_par ,
 .Ent_contain .Ent_img {
   width:  500px;
-  height: 500px;
+  height: 500px;  
   
-  
+}
+.Ent_contain .Ent_par {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Entreprise .Ent_contain .Ent_img{
   background-color: white;
@@ -447,4 +451,23 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.tache{
+  margin-left: 10px;
+}
+.tache button {
+  padding: 8px 14px;
+  background-color: var(--first);
+  color: white;
+  text-align: center;
+
+}
+.tache h2{
+  text-align: center;
+}
+.tocenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
